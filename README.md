@@ -22,14 +22,14 @@ Monoclonal antibodies
 
 The IgLM model uses a standard left-to-right decoder-only transformer architecture (GPT-2), trained by autoregressive language modeling of reordered antibody sequence segments that are conditioned on chain and species identifier tags.
 
-<img width="381" alt="Screen Shot 2023-10-24 at 9 38 00 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/cd86b445-d96a-4389-a01f-84e5e9a7eab9">
-<img width="160" alt="Screen Shot 2023-10-24 at 9 40 46 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/80535d62-7a13-4a33-a60a-acc0a0f2910d">
+<img width="972" alt="Screen Shot 2023-10-24 at 11 14 35 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/45569681-39e9-4c83-bcb7-3a1aacdaf396">
 
 
 but it is trained for infilling through rearrangement of sequences.
 
 m is the mask length
 j is the mask starting position
+note that our vocabulary of tokens now includes tokens for MASK,SEP,ANS, and conditioning tags
 
 infilling method is better because it incurs almost no computational overhead compared to language modeling, sequence lengths remain similar to those encountered for the same x during language modeling. In contrast, using LMs to directly predict x from x ̃ as in Fedus et al. (2018) effectively doubles the sequence length of x. This is particularly problematic when considering models like GPT-2 whose memory usage grows quadratically with sequence length. Second, our framework requires minimal change (three addi- tional tokens) to an existing LM’s vocabulary. Fi- nally, because the entirety of x ̃ is in the “past” when predicting y, the ILM framework combines the abil- ity to attend to incorporate context on both sides of a blank with the simplicity of decoding from LMs.
 
