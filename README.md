@@ -43,6 +43,14 @@ infilling method is better because it incurs almost no computational overhead co
 
 (Answer one or more of the following questions: What was overlooked by the authors? What could have been developed further? Were there any errors? Have others disputed the findings?)
 
+#### Figure 2c: Adherence of generated sequences to species conditioning tags. Each plot shows the species classifications of antibody sequences generated with a particular species conditioning tag (indicated above plots). Solid and dashed lines correspond to sequences generated with heavy- and light-chain conditioning, respectively.
+
+<img width="967" alt="Screen Shot 2023-10-25 at 5 15 25 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/9f943b1f-2116-49b0-81bf-c17a4465a5a1">
+
+#### Figure 2d: Adherence of generated sequences to chain conditioning tags. Left plot shows the percentage of heavy-chain-conditioned sequences classified as heavy chains, for each species conditioning tag. The remaining plots show the percentage of light-chain-conditioned sequences, further divided by whether initial residues were characteristic of lambda or kappa chains, classified as lambda or kappa chains.
+
+<img width="916" alt="Screen Shot 2023-10-25 at 5 18 50 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/7678f6d6-3fd9-442e-8a90-6670b83b1538">
+
 ## Code Demonstration
 
 Visit the [Examples.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/Examples.ipynb) for a demonstration of the model usage.
@@ -50,11 +58,11 @@ Visit the [ReproduceResults.ipynb](https://github.com/vrhoward/iglm-overview/blo
 
 ## Additional Resource Links
 
-**1. Antibody Structure and Function:** Chiu ML, Goulet DR, Teplyakov A, Gilliland GL. Antibody Structure and Function: The Basis for Engineering Therapeutics. Antibodies (Basel). 2019 Dec 3;8(4):55. doi: 10.3390/antib8040055. PMID: 31816964; PMCID: PMC6963682.
+**1. To learn more about antibody structure and function:** Chiu ML, Goulet DR, Teplyakov A, Gilliland GL. Antibody Structure and Function: The Basis for Engineering Therapeutics. Antibodies (Basel). 2019 Dec 3;8(4):55. doi: 10.3390/antib8040055. PMID: 31816964; PMCID: PMC6963682.
 
-**2. Infilling by Language Modeling (ILM):** Donahue, Chris, Mina Lee, and Percy Liang. “Enabling Language Models to Fill in the Blanks.” arXiv, September 10, 2020. http://arxiv.org/abs/2005.05339.
+**2. To read the original paper presenting Infilling by Language Modeling (ILM):** Donahue, Chris, Mina Lee, and Percy Liang. “Enabling Language Models to Fill in the Blanks.” arXiv, September 10, 2020. http://arxiv.org/abs/2005.05339.
 
-**3. Relevant Notation for Pseudocode:** Phuong, Mary, and Marcus Hutter. “Formal Algorithms for Transformers.” arXiv, July 19, 2022. https://doi.org/10.48550/arXiv.2207.09238.
+**3. To reference relevant notation for the pseudocode shown above:** Phuong, Mary, and Marcus Hutter. “Formal Algorithms for Transformers.” arXiv, July 19, 2022. https://doi.org/10.48550/arXiv.2207.09238.
 
 **4. [Official Repository for IgLM](https://github.com/Graylab/IgLM)**
 
