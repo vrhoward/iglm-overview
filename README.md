@@ -1,6 +1,6 @@
 # Generative language modeling for antibody design
 
-This repository serves as a descriptive and functional overview of the Immunoglobulin Language Model (IgLM), presented in the following work:
+This repository serves as a descriptive and functional overview of the Immunoglobulin Language Model (IgLM), presented in the following:
 
 Shuai, Richard W., Jeffrey A. Ruffolo, and Jeffrey J. Gray. “Generative Language Modeling for Antibody Design.” bioRxiv, December 20, 2022. https://doi.org/10.1101/2021.12.13.472419.
 
@@ -24,7 +24,7 @@ Monoclonal antibodies
 
 The IgLM model uses a standard left-to-right decoder-only transformer architecture (GPT-2), trained by autoregressive language modeling of reordered antibody sequence segments that are conditioned on chain and species identifier tags.
 
-<img width="972" alt="Screen Shot 2023-10-24 at 11 14 35 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/45569681-39e9-4c83-bcb7-3a1aacdaf396">
+<img width="929" alt="Screen Shot 2023-10-24 at 11 26 01 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1b5b1488-d1d8-4566-b733-c96b349e32ac">
 
 
 but it is trained for infilling through rearrangement of sequences.
