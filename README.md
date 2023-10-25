@@ -28,7 +28,7 @@ The discovery and optimization of novel antibodies for therapeutic application r
 
 ### Approach
 
-This paper presents the Immunoglobulin Language Model (IgLM), an infilling language model for antibody sequences. This model uses a standard left-to-right decoder-only transformer architecture (GPT-2), but it is trained for infilling through rearrangement of sequences, wherein arbitrary-length sequence segments (spans) are masked during training and appended to the end of the sequence. In this manner, the model may learn to predict the masked spans conditioned with the surrounding sequence as the previous context.
+This paper presents the Immunoglobulin Language Model (IgLM), an infilling language model for antibody sequences. This model still uses a standard left-to-right decoder-only transformer architecture (GPT-2), but it is further trained to infill chosen sequence segments, such as CDRs. This functionality is achieved through rearrangement of the amino acid sequences in the dataset, wherein arbitrary-length sequence segments (spans) are masked during training and appended to the end of the sequence. In this manner, the model may learn to predict the masked spans conditioned with the surrounding sequence as the previous context.
 
 ## Architecture Overview
 
