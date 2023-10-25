@@ -1,18 +1,60 @@
 # Generative language modeling for antibody design
 
-This repository is serving as an overview of the Immunoglobulin Language Model (IgLM).
+This repository serves as a descriptive and functional overview of the Immunoglobulin Language Model (IgLM), presented in the following work:
 
+Shuai, Richard W., Jeffrey A. Ruffolo, and Jeffrey J. Gray. “Generative Language Modeling for Antibody Design.” bioRxiv, December 20, 2022. https://doi.org/10.1101/2021.12.13.472419.
 
-## Problem
+## Overview
 
-## Approach
+(Five-minute overview providing context, stating the problem the paper is addressing, characterizing the approach, and giving a brief account of how the problem was addressed.)
+
+Monoclonal antibodies
+
+### Antibody Structure
+
+![Antibody-CDR](https://github.com/vrhoward/iglm-overview/assets/107573643/8d3d1902-63bb-44cb-9d58-fb37a007a82b)
+
+### Problem
+
+### Approach
 
 ## Architecture Overview
 
-Formal Psuedocode
+The IgLM model uses a standard left-to-right decoder-only transformer architecture (GPT-2), trained by autoregressive language modeling of reordered antibody sequence segments that are conditioned on chain and species identifier tags.
+
+<img width="381" alt="Screen Shot 2023-10-24 at 9 38 00 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/cd86b445-d96a-4389-a01f-84e5e9a7eab9">
+<img width="160" alt="Screen Shot 2023-10-24 at 9 40 46 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/80535d62-7a13-4a33-a60a-acc0a0f2910d">
+
+
+but it is trained for infilling through rearrangement of sequences.
+
+m is the mask length
+j is the mask starting position
+
+infilling method is better because it incurs almost no computational overhead compared to language modeling, sequence lengths remain similar to those encountered for the same x during language modeling. In contrast, using LMs to directly predict x from x ̃ as in Fedus et al. (2018) effectively doubles the sequence length of x. This is particularly problematic when considering models like GPT-2 whose memory usage grows quadratically with sequence length. Second, our framework requires minimal change (three addi- tional tokens) to an existing LM’s vocabulary. Fi- nally, because the entirety of x ̃ is in the “past” when predicting y, the ILM framework combines the abil- ity to attend to incorporate context on both sides of a blank with the simplicity of decoding from LMs.
+
+(Prepare a formal pseudocode description of the proposed model, indicate how it differs from previous models)
 
 ## Critical Analysis
 
+(Answer one or more of the following questions: What was overlooked by the authors? What could have been developed further? Were there any errors? Have others disputed the findings?)
+
 ## Code Demonstration
 
-## Resource Links
+
+
+## Additional Resource Links
+
+**1. Antibody Structure and Function:** Chiu ML, Goulet DR, Teplyakov A, Gilliland GL. Antibody Structure and Function: The Basis for Engineering Therapeutics. Antibodies (Basel). 2019 Dec 3;8(4):55. doi: 10.3390/antib8040055. PMID: 31816964; PMCID: PMC6963682.
+
+**2. Infilling by Language Modeling (ILM):** Donahue, Chris, Mina Lee, and Percy Liang. “Enabling Language Models to Fill in the Blanks.” arXiv, September 10, 2020. http://arxiv.org/abs/2005.05339.
+
+**3. Relevant Notation for Pseudocode:** Phuong, Mary, and Marcus Hutter. “Formal Algorithms for Transformers.” arXiv, July 19, 2022. https://doi.org/10.48550/arXiv.2207.09238.
+
+**4. Official Repository for IgLM:** https://github.com/Graylab/IgLM
+
+**5. IgLM Google Colab:** https://colab.research.google.com/github/Graylab/IgLM/blob/main/IgLM.ipynb
+
+## Video Recording
+
+
