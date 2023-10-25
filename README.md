@@ -12,17 +12,19 @@ Antibodies, also known as immunoglobulins, are important protein components of t
 
 <img width="594" alt="Screen Shot 2023-10-24 at 11 17 13 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1e6bfaec-7ae4-4b15-ae9b-52098cadee9d">
 
+Figure adapted from [Wang](https://www.rapidnovor.com/identifying-cdrs-antibody-sequencing/).
+
 Antibodies are composed of 
 1) two identical peptide chain pairs: heavy chain and light chain
 2) variable (V) and constant (C) regions
 3) three CDR loops forming the majority of the antigen-binding site contained within each variable region
 4) framework sequences outside the CDR loops that stabilize the loop structure
 
-The CDRs composing the antigen-binding sites are highly variable, allowing for extensive diversity and high specificity in antigen binding. For these reasons, antibodies have proven to be a powerful therapeutic tool for treatment and diagnostics, becoming a key target for discovery and optimization within therapeutic applications.
+The CDRs composing the antigen-binding sites are highly variable, allowing for extensive diversity and high specificity in antigen binding. For these reasons, antibodies have proven to be a powerful therapeutic tool for treatment and diagnostics.
 
 ### Problem
 
-The discovery and optimization of monoclonal antibodies is requires lare sequence libraries of 
+The discovery and optimization of novel antibodies for therapeutic application requires large sequence libraries. While synthetic antibody libraries can be prepared via experimental modifications to the CDRs, the possible sequence space within the CDRs is too large to sample as diversifying 10 positions of one CDR yields 10^{13}$ possible variants
 
 ### Approach
 
