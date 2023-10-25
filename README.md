@@ -24,11 +24,9 @@ The CDRs composing the antigen-binding sites are highly variable, allowing for e
 
 ### Problem
 
-The discovery and optimization of novel antibodies for therapeutic application requires the construction of large sequence libraries, which typically focuses on diversification of the CDR loop sequences in order to facilitate binding to a diverse set of antigens. While these synthetic antibody libraries can be prepared via direct experimental modifications to antibody CDRs, the possible sequence space within the CDRs is too large to sample, making this method intractable.
+The discovery and optimization of novel antibodies for therapeutic application requires the construction of large sequence libraries, which typically focuses on diversification of the CDR loop sequences in order to facilitate binding to a diverse set of antigens. While these synthetic antibody libraries can be prepared via direct experimental modifications to antibody CDRs, the possible sequence space within the CDRs is too large to sample, making this method intractable. In response to these challenges, a number of artificial intelligence (AI)-based approaches have been developed for antibody-related generation tasks.  
 
 ### Approach
-
-In response to these challenges, a number of artificial intelligence (AI)-based approaches have been developed for antibody-related generation tasks.  
 
 This paper presents the Immunoglobulin Language Model (IgLM) 
 
