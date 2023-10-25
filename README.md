@@ -74,7 +74,7 @@ Visit the [ReproduceResults.ipynb](https://github.com/vrhoward/iglm-overview/blo
 
 Visit the [Examples.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/Examples.ipynb) for a brief demonstration of the model usage for sequence infilling, full sequence generation, and likelihood calculations.
 
-## Additional Resource Links
+## Additional Resources and Links
 
 **1. To learn more about antibody structure and function:** Chiu ML, Goulet DR, Teplyakov A, Gilliland GL. Antibody Structure and Function: The Basis for Engineering Therapeutics. Antibodies (Basel). 2019 Dec 3;8(4):55. doi: 10.3390/antib8040055. PMID: 31816964; PMCID: PMC6963682.
 
