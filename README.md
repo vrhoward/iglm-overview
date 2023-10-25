@@ -86,3 +86,6 @@ Visit the [Examples.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/E
 ## Video Recording
 
 
+https://github.com/vrhoward/iglm-overview/assets/107573643/190d8417-f514-4dc2-9196-0e14bef5e1cc
+
+
