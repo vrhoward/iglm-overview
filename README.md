@@ -12,7 +12,9 @@ Monoclonal antibodies
 
 ### Antibody Structure
 
-![Antibody-CDR](https://github.com/vrhoward/iglm-overview/assets/107573643/8d3d1902-63bb-44cb-9d58-fb37a007a82b)
+<img width="594" alt="Screen Shot 2023-10-24 at 11 17 13 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1e6bfaec-7ae4-4b15-ae9b-52098cadee9d">
+
+
 
 ### Problem
 
