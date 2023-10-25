@@ -8,26 +8,24 @@ Shuai, Richard W., Jeffrey A. Ruffolo, and Jeffrey J. Gray. “Generative Langua
 
 (Five-minute overview providing context, stating the problem the paper is addressing, characterizing the approach, and giving a brief account of how the problem was addressed.)
 
-Monoclonal antibodies
+Antibodies are a powerful therapeutic tool, owing to their diversity 
 
 ### Antibody Structure
 
 <img width="594" alt="Screen Shot 2023-10-24 at 11 17 13 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1e6bfaec-7ae4-4b15-ae9b-52098cadee9d">
 
-
-
-### Problem
-
 ### Approach
 
 ## Architecture Overview
 
-The IgLM model uses a standard left-to-right decoder-only transformer architecture (GPT-2), trained by autoregressive language modeling of reordered antibody sequence segments that are conditioned on chain and species identifier tags.
+The IgLM model uses a standard left-to-right decoder-only transformer architecture (GPT-2), trained on 558 million natural antibody sequences. 
+
+by autoregressive language modeling of reordered antibody sequence segments that are conditioned on chain and species identifier tags.
 
 <img width="929" alt="Screen Shot 2023-10-24 at 11 26 01 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1b5b1488-d1d8-4566-b733-c96b349e32ac">
 
 
-but it is trained for infilling through rearrangement of sequences.
+
 
 m is the mask length
 j is the mask starting position
