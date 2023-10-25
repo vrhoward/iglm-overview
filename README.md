@@ -32,7 +32,7 @@ This paper presents the Immunoglobulin Language Model (IgLM), an infilling langu
 
 ## Architecture Overview
 
-IgLM was trained on a collection of antibody sequences from the Observed Antibody Space (OAS), which contains natural antibody sequences from six species: human, mouse, rat, rabbit, rhesus, and camel. The training protocol introduces two main components that vary from the [basic pseudocode](https://doi.org/10.48550/arXiv.2207.09238):
+IgLM was trained on a collection of antibody sequences from the Observed Antibody Space (OAS), which contains natural antibody sequences from six species: human, mouse, rat, rabbit, rhesus, and camel. The training protocol introduces three main components that vary from the [basic pseudocode](https://doi.org/10.48550/arXiv.2207.09238):
 
 1) conditioning tags for chain type (heavy or light) and species-of-origin are prepended to training sequences, allowing for controllable generation of sequences during inference
 2) randomly masked spans of ($10-20$) residues are appended to the end of each amino acid sequence
