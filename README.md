@@ -24,15 +24,15 @@ The CDRs composing the antigen-binding sites are highly variable, allowing for e
 
 ### Problem
 
-The discovery and optimization of novel antibodies for therapeutic application requires the construction of large sequence libraries, which typically focuses on diversification of the CDR loop sequences in order to facilitate binding to a diverse set of antigens. While these synthetic antibody libraries can be prepared via direct experimental modifications to antibody CDRs, the possible sequence space within the CDRs is too large to sample, making this method intractable. In response to these challenges, a number of artificial intelligence (AI)-based approaches have been developed for antibody-related generation tasks.  
+The discovery and optimization of novel antibodies for therapeutic application requires the construction of large sequence libraries, which typically focuses on diversification of the CDR loop sequences in order to facilitate binding to a diverse set of antigens. While these synthetic antibody libraries can be prepared via direct experimental modifications to antibody CDRs, the possible sequence space within the CDRs is too large to sample, making this method intractable. In response to these challenges, a number of artificial intelligence (AI)-based approaches have been developed for antibody-related generation tasks. However, these approaches typically adopt left-to-right decoding strategies that are ill-equipped to re-design specific segments of interest within proteins.
 
 ### Approach
 
-This paper presents the Immunoglobulin Language Model (IgLM) 
+This paper presents the Immunoglobulin Language Model (IgLM), an infilling language model for antibody sequences. This model uses a standard left-to-right decoder-only transformer architecture (GPT-2), but it is trained for infilling through rearrangement of sequences, wherein arbitrary-length sequence segments (spans) are masked during training and appended to the end of the sequence. In this manner, the model may learn to predict the masked spans conditioned with the surrounding sequence as the previous context.
 
 ## Architecture Overview
 
-The IgLM model uses a standard left-to-right decoder-only transformer architecture (GPT-2), trained on 558 million natural antibody sequences. 
+IgLM was trained on a collection of antibody sequences from the Observed Antibody Space (OAS), which contains natural antibody sequences from six species: human, mouse, rat, rabbit, rhesus, and camel. The training protocol introduces two main components that vary from the [basic pseudocode](:
 
 by autoregressive language modeling of reordered antibody sequence segments that are conditioned on chain and species identifier tags.
 
