@@ -14,11 +14,7 @@ Antibodies, also known as immunoglobulins, are important protein components of t
 
 <img width="594" alt="Screen Shot 2023-10-24 at 11 17 13 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1e6bfaec-7ae4-4b15-ae9b-52098cadee9d">
 
-Owing to their extensive diversity and high specificity in antigen binding, antibodies have also proven to be a powerful therapeutic tool.
-
-In turn, monoclonal antibodies (mAbs) have become a key target for therapeutic discovery and optimization, but these efforts are reliant 
-
-The identification and fine-tuning of monoclonal antibodies for therapeutic use depend on extensive sequence libraries; however, challenges related to developability—such as poor solubility, reduced thermal stability, elevated aggregation, and high immunogenicity—pose significant obstacles.
+Owing to their extensive diversity and high specificity in antigen binding, antibodies have also proven to be a powerful therapeutic tool, with monoclonal antibodies (mAbs) becoming a key target for discovery and optimization
 
 ### Problem
 
