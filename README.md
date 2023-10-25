@@ -51,10 +51,13 @@ infilling method is better because it incurs almost no computational overhead co
 
 <img width="916" alt="Screen Shot 2023-10-25 at 5 18 50 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/7678f6d6-3fd9-442e-8a90-6670b83b1538">
 
+&nbsp;
+
+Visit the [ReproduceResults.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/ReproduceResults.ipynb) to see the code used for recreation of the results shown in Figures 2c and 2d from the original paper.
+
 ## Code Demonstration
 
-Visit the [Examples.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/Examples.ipynb) for a demonstration of the model usage.
-Visit the [ReproduceResults.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/ReproduceResults.ipynb) to see code for a recreation of the results shown Figures 2c and 2d from the original paper.
+Visit the [Examples.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/Examples.ipynb) for a brief demonstration of the model usage for sequence infilling, full sequence generation, and likelihood calculations.
 
 ## Additional Resource Links
 
