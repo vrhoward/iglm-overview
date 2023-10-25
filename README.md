@@ -45,11 +45,11 @@ infilling method is better because it incurs almost no computational overhead co
 
 #### Figure 2c: Adherence of generated sequences to species conditioning tags. Each plot shows the species classifications of antibody sequences generated with a particular species conditioning tag (indicated above plots). Solid and dashed lines correspond to sequences generated with heavy- and light-chain conditioning, respectively.
 
-<img width="967" alt="Screen Shot 2023-10-25 at 5 15 25 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/9f943b1f-2116-49b0-81bf-c17a4465a5a1">
+<img width="943" alt="Screen Shot 2023-10-25 at 5 35 50 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/53b16097-81a9-47b2-b800-4514602fb51b">
 
 #### Figure 2d: Adherence of generated sequences to chain conditioning tags. Left plot shows the percentage of heavy-chain-conditioned sequences classified as heavy chains, for each species conditioning tag. The remaining plots show the percentage of light-chain-conditioned sequences, further divided by whether initial residues were characteristic of lambda or kappa chains, classified as lambda or kappa chains.
 
-<img width="916" alt="Screen Shot 2023-10-25 at 5 18 50 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/7678f6d6-3fd9-442e-8a90-6670b83b1538">
+<img width="922" alt="Screen Shot 2023-10-25 at 5 36 03 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/969963e5-65d7-4b99-8ce4-8eaeeab54546">
 
 &nbsp;
 
