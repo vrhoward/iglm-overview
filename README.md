@@ -39,6 +39,8 @@ IgLM was trained on a collection of antibody sequences from the Observed Antibod
 
 <img width="929" alt="Screen Shot 2023-10-24 at 11 26 01 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1b5b1488-d1d8-4566-b733-c96b349e32ac">
 
+&nbsp;
+
 Note that the vocabulary of tokens, $V^*$, in the instance will include each of the following: [MASK], [SEP], [ANS], and the conditioning tags.
 
 Also note that $m$ is the mask length and $j$ is the mask starting position. During training, these values are chosen from uniform random distributions, as denoted in Algorithm 1. During inference, these values are provided by the user.
