@@ -41,17 +41,23 @@ infilling method is better because it incurs almost no computational overhead co
 
 ## Critical Analysis
 
-(Answer one or more of the following questions: What was overlooked by the authors? What could have been developed further? Were there any errors? Have others disputed the findings?)
+The following critical analysis tests the reproducibility of the preliminary results presented in the paper, specifically results from Figure 2c and Figure 2d.
 
-#### Figure 2c: Adherence of generated sequences to species conditioning tags. Each plot shows the species classifications of antibody sequences generated with a particular species conditioning tag (indicated above plots). Solid and dashed lines correspond to sequences generated with heavy- and light-chain conditioning, respectively.
+**Figure 2c:** Adherence of generated sequences to species conditioning tags. Each plot shows the species classifications of antibody sequences generated with a particular species conditioning tag (indicated above plots). Solid and dashed lines correspond to sequences generated with heavy- and light-chain conditioning, respectively.
 
 <img width="943" alt="Screen Shot 2023-10-25 at 5 35 50 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/53b16097-81a9-47b2-b800-4514602fb51b">
 
-#### Figure 2d: Adherence of generated sequences to chain conditioning tags. Left plot shows the percentage of heavy-chain-conditioned sequences classified as heavy chains, for each species conditioning tag. The remaining plots show the percentage of light-chain-conditioned sequences, further divided by whether initial residues were characteristic of lambda or kappa chains, classified as lambda or kappa chains.
+&nbsp;
+
+While some plots demonstrate reasonable matches in the results for sequence adherence to species conditioning tags, there are notable discrepancies for certain species. For example, sequences conditioned on the [HUMAN] species tag and the [RAT] species tag generate nearly 100% alpaca sequences, unlike the results seen in the paper.
+
+**Figure 2d:** Adherence of generated sequences to chain conditioning tags. Left plot shows the percentage of heavy-chain-conditioned sequences classified as heavy chains, for each species conditioning tag. The remaining plots show the percentage of light-chain-conditioned sequences, further divided by whether initial residues were characteristic of lambda or kappa chains, classified as lambda or kappa chains.
 
 <img width="922" alt="Screen Shot 2023-10-25 at 5 36 03 AM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/969963e5-65d7-4b99-8ce4-8eaeeab54546">
 
 &nbsp;
+
+While the results of the heavy-chain-conditioned sequences and light(kappa)-chain-conditioned sequences seem to match the results in the paper, the results of the light(lambda)-chain-conditioned sequences have distinct differences. When conditioned on the [LIGHT] chain tag and prompted with characteristic lambda residues, the generated sequences show a 50/50 distribution between lambda and kappa chains for most of the species rather than a 100% generation of lambda sequences, as seen in the paper's results.
 
 Visit the [ReproduceResults.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/ReproduceResults.ipynb) to see the code used for recreation of the results shown in Figures 2c and 2d from the original paper.
 
