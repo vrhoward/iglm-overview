@@ -32,22 +32,16 @@ This paper presents the Immunoglobulin Language Model (IgLM), an infilling langu
 
 ## Architecture Overview
 
-IgLM was trained on a collection of antibody sequences from the Observed Antibody Space (OAS), which contains natural antibody sequences from six species: human, mouse, rat, rabbit, rhesus, and camel. The training protocol introduces two main components that vary from the [basic pseudocode](:
+IgLM was trained on a collection of antibody sequences from the Observed Antibody Space (OAS), which contains natural antibody sequences from six species: human, mouse, rat, rabbit, rhesus, and camel. The training protocol introduces two main components that vary from the [basic pseudocode](https://doi.org/10.48550/arXiv.2207.09238):
 
-by autoregressive language modeling of reordered antibody sequence segments that are conditioned on chain and species identifier tags.
+1) conditioning tags for chain type (heavy or light) and species-of-origin, allowing for controllable generation
+2) randomly masked spans of $10$ to $20$ residues to diversify the infilling strategy during training
 
 <img width="929" alt="Screen Shot 2023-10-24 at 11 26 01 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1b5b1488-d1d8-4566-b733-c96b349e32ac">
 
+Note that the vocabulary of tokens, $V^*$, in the instance will include each of the following: [MASK], [SEP], [ANS], and the conditioning tags.
 
-
-
-m is the mask length
-j is the mask starting position
-note that our vocabulary of tokens now includes tokens for MASK,SEP,ANS, and conditioning tags
-
-infilling method is better because it incurs almost no computational overhead compared to language modeling, sequence lengths remain similar to those encountered for the same x during language modeling. In contrast, using LMs to directly predict x from x ̃ as in Fedus et al. (2018) effectively doubles the sequence length of x. This is particularly problematic when considering models like GPT-2 whose memory usage grows quadratically with sequence length. Second, our framework requires minimal change (three addi- tional tokens) to an existing LM’s vocabulary. Fi- nally, because the entirety of x ̃ is in the “past” when predicting y, the ILM framework combines the abil- ity to attend to incorporate context on both sides of a blank with the simplicity of decoding from LMs.
-
-(Prepare a formal pseudocode description of the proposed model, indicate how it differs from previous models)
+Also note that $m$ is the mask length and $j$ is the mask starting position. During training, these values are chosen from uniform random distributions, as denoted in Algorithm 1. During inference, these values are provided by the user.
 
 ## Critical Analysis
 
