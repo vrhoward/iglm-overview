@@ -45,7 +45,8 @@ infilling method is better because it incurs almost no computational overhead co
 
 ## Code Demonstration
 
-
+Visit the [Examples.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/Examples.ipynb) for a demonstration of the model usage.
+Visit the [ReproduceResults.ipynb](https://github.com/vrhoward/iglm-overview/blob/main/ReproduceResults.ipynb) to see code for a recreation of the results shown Figures 2c and 2d from the original paper.
 
 ## Additional Resource Links
 
@@ -55,9 +56,9 @@ infilling method is better because it incurs almost no computational overhead co
 
 **3. Relevant Notation for Pseudocode:** Phuong, Mary, and Marcus Hutter. “Formal Algorithms for Transformers.” arXiv, July 19, 2022. https://doi.org/10.48550/arXiv.2207.09238.
 
-**4. Official Repository for IgLM:** https://github.com/Graylab/IgLM
+**4. [Official Repository for IgLM](https://github.com/Graylab/IgLM)**
 
-**5. IgLM Google Colab:** https://colab.research.google.com/github/Graylab/IgLM/blob/main/IgLM.ipynb
+**5. [IgLM Google Colab](https://colab.research.google.com/github/Graylab/IgLM/blob/main/IgLM.ipynb)** 
 
 ## Video Recording
 
