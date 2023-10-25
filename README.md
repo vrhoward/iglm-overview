@@ -34,16 +34,17 @@ This paper presents the Immunoglobulin Language Model (IgLM), an infilling langu
 
 IgLM was trained on a collection of antibody sequences from the Observed Antibody Space (OAS), which contains natural antibody sequences from six species: human, mouse, rat, rabbit, rhesus, and camel. The training protocol introduces two main components that vary from the [basic pseudocode](https://doi.org/10.48550/arXiv.2207.09238):
 
-1) conditioning tags for chain type (heavy or light) and species-of-origin, allowing for controllable generation
-2) randomly masked spans of $10$ to $20$ residues to diversify the infilling strategy during training
+1) conditioning tags for chain type (heavy or light) and species-of-origin are prepended to training sequences, allowing for controllable generation of sequences during inference
+2) randomly masked spans of ($10-20$) residues are appended to the end of each amino acid sequence
+3) new tokens are introduced for training and inference
+
+The vocabulary of tokens, $V^*$, in these algorithms will include each of the following: the $20$ common amino acids, [MASK], [SEP], [ANS], and the conditioning tags.
 
 <img width="929" alt="Screen Shot 2023-10-24 at 11 26 01 PM" src="https://github.com/vrhoward/iglm-overview/assets/107573643/1b5b1488-d1d8-4566-b733-c96b349e32ac">
 
 &nbsp;
 
-Note that the vocabulary of tokens, $V^*$, in these algorithms will include each of the following: [MASK], [SEP], [ANS], and the conditioning tags.
-
-Also note that $m$ is the mask length and $j$ is the mask starting position. During training, these values are chosen from uniform random distributions, as denoted in Algorithm 1. During inference, these values are provided by the user.
+where $m$ is the mask length and $j$ is the mask starting position. During training, these values are chosen from uniform random distributions, as denoted in Algorithm 1. During inference, these values are provided by the user.
 
 ## Critical Analysis
 
@@ -56,6 +57,8 @@ The following critical analysis tests the reproducibility of the preliminary res
 &nbsp;
 
 While some plots demonstrate reasonable matches in the results for sequence adherence to species conditioning tags, there are notable discrepancies for certain species. For example, sequences conditioned on the [HUMAN] species tag and the [RAT] species tag generate nearly 100% alpaca sequences, unlike the results seen in the paper.
+
+Further, some of the paper results display error. The [RAT] species tag, for example, is unable to produce rat sequences. 
 
 **Figure 2d:** Adherence of generated sequences to chain conditioning tags. Left plot shows the percentage of heavy-chain-conditioned sequences classified as heavy chains, for each species conditioning tag. The remaining plots show the percentage of light-chain-conditioned sequences, further divided by whether initial residues were characteristic of lambda or kappa chains, classified as lambda or kappa chains.
 
